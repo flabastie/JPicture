@@ -1,18 +1,13 @@
 # JPicture
 
-Usage IndexDatabase.java
-========================
-
-
-Lancement indexation
-====================
+Usage IndexDatabase.java / Lancement indexation
+===============================================
 
 - Dans fonction main de JPictureNFE205 :
 
 - Décommenter la ligne correspondante à l'indexation à lancer :
- (ex : // new IndexDatabase(1, 16, "Base10000_files.txt", "HistGREY_16.json"); )
- Paramètre fichier pris en entrée : Base10000_files.txt
- Paramètre fichier en sortie : HistGREY_16.json
+
+//new IndexDatabase(1, 16, 	"Base10000_files.txt", "HistGREY_16.json");
 
 
 Format utilisé pour stockage des signatures : json
@@ -44,3 +39,11 @@ Les pourcentages sont placés dans un tableau.
 	.......
 }
 
+Usage QueryByExample.java / Lancement recherche image
+=====================================================
+
+- Dans fonction main de JPictureNFE205 :
+
+- Adapter paramètres dans :
+
+new QueryByExample("137073", 12, 10, "Base10000_files.txt", "Base10000/HistGREY_16.json");
