@@ -394,30 +394,23 @@ public class JPictureNFE205 {
         
     public static void main(String[] args) throws JSONException, IOException, ParseException {
     	
-        //JPictureNFE205 p = new JPictureNFE205("img/15000.jpg");
-        //p.computeRGBlHistogram(8);
         
     	// indexation en niveau de gris
+    	
         //new IndexDatabase(1, 256, 	"Base10000_files.txt", "HistGREY_256.json");
         //new IndexDatabase(1, 64, 	"Base10000_files.txt", "HistGREY_64.json");
         //new IndexDatabase(1, 16, 	"Base10000_files.txt", "HistGREY_16.json");
         
     	// indexation RGB
+    	
         //new IndexDatabase(3, 216, 	"Base10000_files.txt", "HistRGB_6x6x6.json");
         //new IndexDatabase(3, 64, 	"Base10000_files.txt", "HistRGB_4x4x4.json");
         //new IndexDatabase(3, 2, 	"Base10000_files.txt", "HistRGB_2x2x2.json");
+    	    	
+    	// Recherche image par similarité
+    	// Paramètres : nom-image / nrbe de résultats / nbre d'itérations / fichier liste images / fichier histogrammes
     	
-    	/*
-    	Scanner sc = new Scanner(System.in);
-    	System.out.println("Veuillez écrire le numéro image référence :");
-    	String str = sc.nextLine();
-    	sc.close();
-    	System.out.println("Vous avez saisi : " + str);
-    	*/
-    	
-    	//new QueryByExample("137069", 12, "Base10000_files.txt", "Base10000/HistGREY_16.json");
     	new QueryByExample("137073", 12, 10, "Base10000_files.txt", "Base10000/HistGREY_16.json");
-    	//new QueryByExample("137069", 12, "Base10000_files.txt", "Base10000/HistGREY_256.json");
 
     } 
 }
