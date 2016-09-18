@@ -410,7 +410,7 @@ public class JPictureNFE205 {
     	// Recherche image par similarité
     	// Paramètres : nom-image / nrbe de résultats / nbre d'itérations / fichier liste images / fichier histogrammes
     	
-    	new QueryByExample("137073", 12, 10, "Base10000_files.txt", "Base10000/HistGREY_16.json");
+    	new QueryByExample("104010", 12, 100, "Base10000_files.txt", "Base10000/HistGREY_16.json");
 
     } 
 }
